@@ -4,7 +4,7 @@ import { ChatIcon } from "./icons";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center gap-2 h-[100vh] ">
-      <Image src={"/logo/logo.png"} alt="logo" width={600} height={100} />
+      <Image src={"/svg/Logo.svg"} alt="logo" width={600} height={100} />
       <p className="text-2xl font-semibold  text-main ">Coming soon ...</p>
 
       <div className="bg-main text-white p-4 rounded-full absolute bottom-4 right-4">
