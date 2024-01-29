@@ -12,9 +12,6 @@ export default function LandingPage() {
           <div className="">
             <ChatIcon />
           </div>
-          <p className="bg-gray-400 p-2 border rounded-md absolute top-[-70px] left-[-300px] transition-all duration-200 w-[300px] opacity-85 ">
-            Chat whit us to request information
-          </p>
         </span>
       </div>
     </div>
