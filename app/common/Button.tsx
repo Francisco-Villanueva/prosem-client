@@ -12,9 +12,9 @@ interface ButtonProps  {
 
 export default function Button({children, variant, className, disabled, onClick}: ButtonProps) {
   const ACTIVE_STYLE = {
-    primary: 'text-white bg-green content-center',
-    secondary: 'text-green bg-white content-center border border-green',
-    dark: 'text-green bg-black content center'
+    primary: 'text-white bg-green ',
+    secondary: 'text-green bg-white border border-green',
+    dark: 'text-green bg-black'
   }
 
   const DISABLE_STYLE = {
@@ -26,7 +26,7 @@ export default function Button({children, variant, className, disabled, onClick}
   const buttonStyle = disabled ? DISABLE_STYLE[variant || 'primary'] : ACTIVE_STYLE[variant || 'primary'];
 
   return <button  
-  className={`font-bold rounded-md p-2 ${className} ${buttonStyle}`}
+  className={`font-bold content-center rounded-md p-2 ${className} ${buttonStyle}`}
   disabled={disabled}
   onClick={onClick}>
   {children}  
