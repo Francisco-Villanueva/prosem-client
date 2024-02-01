@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        main: "#49B88C",
+        grenn: "#49B88C",
+        black: "#333333",
+        "dark-green": "#004225",
       },
     },
   },
