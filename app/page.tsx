@@ -1,9 +1,14 @@
 import LandingPage from "@/app/components/LandingPage";
+import { FeaturesPage, Footer, PricingPage, WhyUs } from "./components";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center gap-2 h-[100vh]">
-    <LandingPage />
-  </main>
+    <main className=" h-[100vh] w-full relative">
+      <LandingPage />
+      <FeaturesPage />
+      <WhyUs />
+      <PricingPage />
+      <Footer />
+    </main>
   );
 }

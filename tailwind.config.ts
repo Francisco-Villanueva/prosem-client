@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         green: "#49B88C",
         black: "#333333",
+        error: "#FF4949",
+        "ligth-black": "#818181",
         "dark-green": "#004225",
       },
     },
