@@ -79,7 +79,7 @@ export function Navbar() {
             alt="Prosem Logo Enterprise"
           />
         </div>
-        <div className="flex gap-4 text-white  z-10">
+        <div className="flex gap-4 text-white  z-10 items-center">
           {items.map((item) => (
             <a
               key={item}
@@ -91,6 +91,12 @@ export function Navbar() {
               {item}
             </a>
           ))}
+          <a
+            href="https://prosem-backoffice-chi.vercel.app/login"
+            className="bg-white p-2 rounded-md text-green hover:bg-black transition-all duration-300"
+          >
+            Get Started
+          </a>
         </div>
       </div>
     </nav>
