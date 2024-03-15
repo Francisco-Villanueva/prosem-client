@@ -52,7 +52,7 @@ const Config: Record<PricingTypes, TConfig> = {
     title: "Free Tier",
     paragraph: `Use this space to start using our software as 
       free and check if this is what you want for 
-      your business`,
+      your business. `,
     price: "0",
     details: {
       customPage: false,
@@ -88,19 +88,19 @@ export function PricingCard({ type }: { type: PricingTypes }) {
   return (
     <div className="aspect-square  w-1/5 rounded-2xl shadow-lg border  ">
       <div
-        className={`  h-[30%] ${
+        className={`  h-[35%] ${
           type === "standar" ? "bg-green text-white" : "bg-white text-green"
-        } rounded-t-2xl  flex flex-col justify-center items-center gap-2  p-4 `}
+        } rounded-t-2xl  flex flex-col justify-center items-center gap-2  `}
       >
-        <h2 className="text-2xl font-semibold drop-shadow-md">{title}</h2>
-        <h2 className="text-3xl font-bold drop-shadow-md">${price}</h2>
+        <h2 className="text-xl font-semibold drop-shadow-md">{title}</h2>
+        <h2 className="text-[2.5rem] font-bold drop-shadow-md">${price}</h2>
         <span className="text-xs font-light drop-shadow-md">PER MONTH</span>
       </div>
-      <div className=" w-full  m-auto  flex flex-col items-center justify-around p-6 gap-4 flex-grow  h-[70%]">
-        <p className="text-xs text-ligth-black text-center font-light  ">
+      <div className=" w-full  m-auto  flex flex-col items-center justify-around p-4 gap-4 flex-grow  h-[65%]">
+        <p className="text-sm text-ligth-black text-center font-light  ">
           {paragraph}
         </p>
-        <section className="text-sm">
+        <section className="text-md">
           <div className="flex gap-2 items-center">
             <CheckIcon />
             <p className="font-bold text-black">Easy customizable</p>
@@ -119,7 +119,7 @@ export function PricingCard({ type }: { type: PricingTypes }) {
           </div>
         </section>
 
-        <section>
+        <section className="w-5/6">
           <Button>Read More</Button>
         </section>
       </div>
