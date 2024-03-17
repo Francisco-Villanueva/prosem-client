@@ -86,21 +86,21 @@ const Config: Record<PricingTypes, TConfig> = {
 export function PricingCard({ type }: { type: PricingTypes }) {
   const { paragraph, price, title, details } = Config[type];
   return (
-    <div className="aspect-square  w-1/5 rounded-2xl shadow-lg border  ">
+    <div className="flex flex-col   w-1/5 rounded-2xl shadow-lg border  ">
       <div
-        className={`  h-[35%] ${
+        className={`  p-2  ${
           type === "standar" ? "bg-green text-white" : "bg-white text-green"
-        } rounded-t-2xl  flex flex-col justify-center items-center gap-2  `}
+        } rounded-t-2xl  flex flex-col justify-center items-center gap-0  `}
       >
         <h2 className="text-xl font-semibold drop-shadow-md">{title}</h2>
         <h2 className="text-[2.5rem] font-bold drop-shadow-md">${price}</h2>
         <span className="text-xs font-light drop-shadow-md">PER MONTH</span>
       </div>
-      <div className=" w-full  m-auto  flex flex-col items-center justify-around p-4 gap-4 flex-grow  h-[65%]">
-        <p className="text-sm text-ligth-black text-center font-light  ">
+      <div className=" w-full flex-grow  m-auto  flex flex-col items-center justify-between rounded-b-2xl p-4 gap-4    ">
+        <p className="text-xs text-ligth-black text-center font-light  ">
           {paragraph}
         </p>
-        <section className="text-md">
+        <section className="text-sm">
           <div className="flex gap-2 items-center">
             <CheckIcon />
             <p className="font-bold text-black">Easy customizable</p>

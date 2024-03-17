@@ -72,7 +72,7 @@ export function WhyUs() {
           </div>
         </div>
       </aside>
-      <section className=" w-1/2 h-full  relative">
+      <section className=" w-1/2 h-full  relative ">
         <div className="w-full h-full  absolute right-[-150px]">
           <div className="w-full h-full relative ">
             <Image
